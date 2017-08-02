@@ -1,0 +1,8 @@
+surfaceType=desktop
+searchType=SR //should this be done upper case?
+location=latitude:10,longitude:20,radiusInMiles:1,locationId:100
+
+
+//comments
+should these key value pairs be made mandatory inputs?
+if not provided, what should be default set to?

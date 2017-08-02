@@ -1,0 +1,4 @@
+jobListingCtr,employerCtr, blank_jobListingScore_SR_A, non_blank_jobListingScore_SR_A,	blank_employerScore_SR_A,	non_blank_employerScore_SR_A	penaltyScoreMultiplier,	easyApplyEnabled,	gdApplyEnabled,	aoValueCpc
+0.1,0.2,0.3, 0.35, 0.4, 0.45, 0.9, true, true, 1
+# use excalamation to comment ignore
+0.1,0.2,0.3, 0.35, 0.4, 0.45, 0.9, false, false, 1

@@ -1,0 +1,14 @@
+Iterator is a classic design pattern for walking through a data structure without having to expose the details of how data is stored in the data structure.
+The Collection interface extends the Iterable interface.
+
+
+ ArrayList and LinkedList operate similarly. The critical difference between them pertains to internal implementation, which affects their performance. ArrayList is efficient for retrieving ele- ments and LinkedList is efficient for inserting and removing elements at the beginning of the list.
+ Both have the same performance for inserting and removing elements in the middle or at the end of the list.
+
+
+ In a priority queue, the element with the highest priority is removed first.
+A queue is a first-in, first-out data structure. Elements are appended to the end of the queue and are removed from the beginning of the queue. In a priority queue, elements are assigned priorities. When accessing elements, the element with the highest priority is removed first.
+
+LinkedList is ideal for queue operations because it is efficient for inserting and removing elements from both ends of a list.
+
+The PriorityQueue class implements a priority queue

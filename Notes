@@ -1,0 +1,12 @@
+
+From book "Sally A. Goldman, Kenneth J. Goldman-A Practical Guide to Data Structures and Algorithms using Java (Chapman & Hall CRC Applied Algorithms and Data Structures series)-Chapman and Hall CRC (2007).pdf"
+
+
+Structural design decisions often involve making trade-offs between the time and space complexity of the solution,
+known as time-space trade-offs.
+
+At a fundamental level, data structures are organized using two language primitives: references (or pointers∗) and contiguous memory (or arrays).
+In a pointer-based data structure portions of the data are kept in separate objects, and the organization is determined by the way these objects refer to each other. Access is provided by following references.
+In pointer-based data structures, the elements in the data structure are not contiguous in memory.
+Each element is allocated to an arbitrary free block of memory in the heap (of the appropriate size) and pointers to other objects in the data structure allow navigation.
+Because the objects need not be contiguous in memory, new elements can be added to the structure dynamically.

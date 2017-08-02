@@ -1,0 +1,9 @@
+uniqueId,jobReqId,jobListingId,jobTitle,jobDescription,employer
+1, 1, 1, chef de projet, dummy, abc
+2, 2, 2, project manager, project manager for xyz, xyz
+3, 3, 3, project manager, project manager for mno, mno
+4, 4, 4, technical project manager, technical project manager for pqr, pqr
+5, 5, 5, reporter, dummy, tuv
+
+6, 6, 6, journalist, dummy, jkl
+7, 7, 7, writer, dummy, lmn

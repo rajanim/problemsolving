@@ -1,0 +1,50 @@
+I/O streams
+    Serialization and deserialization
+    I/O stream in java.io.*
+
+File I/O in java.nio.file.*
+
+Stream is sequence of data
+Stream can represent different source dest, disk files, devices, memory arrays, etc.
+
+
+Byte stream handles I/O of raw binary data
+Character stream handles I/O of character data, auto handling translation to and from local char.
+Buffered stream optimize I/O by reducing number of call to the native API
+Scan and format allows read and write formatted text
+Datastream handle binary IO of primitive data types and string values
+Object stream handles binary IO of objects.
+
+Character streams are often "wrappers" for byte streams. The character stream uses the byte stream to perform the physical I/O, while the character stream handles translation between characters and bytes. FileReader, for example, uses FileInputStream, while FileWriter uses FileOutputStream.
+
+
+byte-character bridge
+InputStreamReader and OutputStreamWriter
+
+Buffered streams:
+ ISR triggers disk access, network activity
+ or some other operation relatively expensive.
+  To reduce this overhead, java provides buffered io streams.
+  Buffered Input stream reads data from a memory area known as buffer, the native input API is called only when the buffer is empty. Similarly, buffered output streams write data to a buffer,
+ and the native output API is called only when the buffer is full.
+
+ Convert unbuffered to buffer by passing unbuffered as constructor input to buffered apis.
+
+ There are four buffered stream classes used to wrap unbuffered streams:
+ BufferedInputStream and BufferedOutputStream create buffered byte streams,
+ while BufferedReader and BufferedWriter create buffered character streams.
+
+Flush buffer (write out ) when its still not full.
+        use flush method.
+
+ Console apis provide way to read passwords via console.
+
+Data stream provides binary i/o of primitive data type.(boolean, char, byte, short, int, long, float, and double) as well as String values
+
+Object streams for object type data types.
+        standard classes support object serialization by implementing searalizable interface.
+
+    ObjectInputStream, ObjectOutputStream,
+        ObjectInput, ObjectOutput
+            Data Stream (DataInput, Dataoutput)
+     So an object stream can contain a mixture of primitive and object values

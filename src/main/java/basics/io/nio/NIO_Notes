@@ -1,0 +1,24 @@
+NIO support file IO and accessing default file system.
+
+
+
+Path class apis followed by File class apis
+    Std file io apis such as check, delete, copy, move are explained.
+    Metadata of file File IO and directory IO
+
+
+Path
+    File paths, tree structure
+
+  Some file systems support the notion of symbolic links.
+  A symbolic link is referred to as a symlink or a soft link.
+   symlink is special file that serves as reference to other file.
+
+
+Path object contain file name, directory list used to construct file path.
+used to examine, locate and manipulate files.
+
+
+
+ Path instance contain info used to specify location of file or directory.
+

@@ -1,0 +1,39 @@
+The Java Collections Framework supports two types of containers:
+■ One for storing a collection of elements is simply called a collection.
+■ The other, for storing key/value pairs, is called a map.
+
+■ Sets store a group of nonduplicate elements.
+■ Lists store an ordered collection of elements.
+■ Stacks store objects that are processed in a last-in, first-out fashion.
+■ Queues store objects that are processed in a first-in, first-out fashion.
+■ PriorityQueues store objects that are processed in the order of their priorities.
+
+
+All the interfaces and classes defined in the Java Collections Framework are grouped in the java.util package.
+
+The design of the Java Collections Framework is an excellent example of using interfaces, abstract classes, and concrete classes.
+The interfaces define the framework.
+The abstract classes provide partial implementation.
+
+he concrete classes implement the interfaces with concrete data structures.
+Providing an abstract class that partially implements an interface makes it convenient for the user to write the code.
+
+Iterator is a classic design pattern for walking through a data structure without having to expose the details of how data is stored in the data structure.
+
+The List interface extends the Collection interface and defines a collection for storing elements in a sequential order.
+To create a list, use one of its two concrete classes: ArrayList or LinkedList.
+
+The ArrayList class and the LinkedList class are two concrete implementations of the List interface.
+ArrayList stores elements in an array. The array is dynamically created.
+If the capacity of the array is exceeded, a larger new array is created and all the elements from the current array are copied to the new array.
+LinkedList stores elements in a linked list.
+f you need to support random access through an index without inserting or removing elements at the beginning of the list, ArrayList offers the most efficient collection. If, however, your application requires the insertion or deletion of elements at the beginning of the list, you should choose LinkedList. A list can grow or shrink dynamically. Once it is created, an array is fixed.
+If your application does not require the insertion or deletion of elements, an array is the most efficient data structure.
+
+A list can hold identical elements. Integer 1 is stored twice in the list (lines 6, 9). ArrayList and LinkedList operate similarly.
+
+The critical difference between them pertains to internal implementation, which affects their performance.
+ArrayList is efficient for retrieving elements and LinkedList is efficient for inserting and removing elements at the beginning of the list.
+Both have the same performance for inserting and removing elements in the middle or at the end of the list.
+
+The get(i) method is available for a linked list, but it is a time-consuming operation. Do not use it to traverse all the elements in a list as shown in (a). Instead you should use an iterator as shown in (b). Note that a foreach loop uses an iterator implicitly.
